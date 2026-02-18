@@ -24,7 +24,6 @@ while True:
         s_uniq.add(vote)
     counter += 1
 
-
 for vote in s_uniq:
     if votes.count(vote) > 1:
         invalid_votes += 1
@@ -35,5 +34,5 @@ for vote in s_uniq:
 #printing
 print (f'you got {counter} voters')
 print(f"Those are your valid voters: {s_uniq} over all: {counter - invalid_votes}")
-print(f'you have {invalid_votes} amount of invalid voters')
+print(f'you have {invalid_votes} invalid voters', invalid_voters)
 
